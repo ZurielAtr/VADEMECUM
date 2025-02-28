@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VADEMECUM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .btn-menu {
+            position: absolute;
+            width: 5%; /* Percentage of container width instead of fixed 650px */
+            height: 5%; /* Percentage of container height instead of fixed 130px */
+            cursor: pointer;
+            display: inline-block;
+        }
+        .transparent-button {
+            position: absolute;
+            width: 40%; /* Percentage of container width instead of fixed 650px */
+            height: 6.5%; /* Percentage of container height instead of fixed 130px */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-block;
+        }
+        #button1 {
+            top: 9%;
+            right: 5%;
+        }
+        #button2 {
+            top: 20.5%;
+            right: 5%;
+        }
+        #button3 {
+            top: 32%;
+            right: 5%;
+        }
+        #button4 {
+            top: 43.5%;
+            right: 5%;
+        }
+        #button5 {
+            top: 55%;
+            right: 5%;
+        }
+        #button6 {
+            top: 66.5%;
+            right: 5%;
+        }
+
+        /* Media query for maintaining aspect ratio on very small or very large screens */
+        @media (max-aspect-ratio: 1/2) or (min-aspect-ratio: 2/1) {
+            .transparent-button {
+                border-radius: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../img/PAGE2.jpg" alt="Vademecum Page">
+
+        <a href="page3.html" class="transparent-button" id="button1"></a>
+        <a href="page4.html" class="transparent-button" id="button2"></a>
+        <a href="page5.html" class="transparent-button" id="button3"></a>
+        <a href="page6.html" class="transparent-button" id="button4"></a>
+        <a href="page7.html" class="transparent-button" id="button5"></a>
+        <a href="page8.html" class="transparent-button" id="button6"></a>
+        <div>
+            <a href="page2.html" class="btn-menu" style="bottom: 14%; right: 9%; width: 13%;"></a>
+            <a href="../index.html" class="btn-menu" style="bottom: 13.5%; right: 24.5%; width: 8%; height: 6%;"></a>
+            <a href="../index.html" class="btn-menu" style="bottom: 13.5%; right: 34%; width: 8%; height: 6%;"></a>
+        </div>
+    </div>
+</body>
+</html>
